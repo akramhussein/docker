@@ -12,7 +12,7 @@ WORKDIR /usr/local/deepstream
 RUN npm install deepstream.io deepstream.io-logger-winston --production
 
 # Link to volumes
-VOLUME [ "/usr/local/deepstream/conf", "/usr/local/deepstream/var" ]
+VOLUME [ "/usr/local/deepstream/var" ]
 
 # Copy default config files
 RUN cp -r /usr/local/deepstream/node_modules/deepstream.io/conf/* /usr/local/deepstream/conf
